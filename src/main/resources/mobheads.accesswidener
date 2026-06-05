@@ -1,0 +1,27 @@
+accessWidener v1 named
+
+# Make the private inner class public
+
+
+accessible field net/minecraft/world/entity/Entity DATA_CUSTOM_NAME Lnet/minecraft/network/syncher/EntityDataAccessor;
+accessible field net/minecraft/world/entity/monster/Creeper DATA_IS_POWERED Lnet/minecraft/network/syncher/EntityDataAccessor;
+accessible field net/minecraft/world/entity/animal/goat/Goat DATA_HAS_LEFT_HORN Lnet/minecraft/network/syncher/EntityDataAccessor;
+accessible field net/minecraft/world/entity/animal/goat/Goat DATA_HAS_RIGHT_HORN Lnet/minecraft/network/syncher/EntityDataAccessor;
+accessible field net/minecraft/world/entity/animal/goat/Goat DATA_IS_SCREAMING_GOAT Lnet/minecraft/network/syncher/EntityDataAccessor;
+accessible field net/minecraft/world/entity/animal/golem/CopperGolem nextWeatheringTick J
+accessible field net/minecraft/world/entity/monster/hoglin/Hoglin DATA_IMMUNE_TO_ZOMBIFICATION Lnet/minecraft/network/syncher/EntityDataAccessor;
+accessible field net/minecraft/world/entity/monster/piglin/AbstractPiglin DATA_IMMUNE_TO_ZOMBIFICATION Lnet/minecraft/network/syncher/EntityDataAccessor;
+
+accessible method net/minecraft/world/entity/animal/axolotl/Axolotl setVariant (Lnet/minecraft/world/entity/animal/axolotl/Axolotl$Variant;)V
+accessible method net/minecraft/world/entity/animal/cow/MushroomCow setVariant (Lnet/minecraft/world/entity/animal/cow/MushroomCow$Variant;)V
+accessible method net/minecraft/world/entity/animal/equine/Horse setVariant (Lnet/minecraft/world/entity/animal/equine/Variant;)V
+accessible method net/minecraft/world/entity/animal/equine/Llama setVariant (Lnet/minecraft/world/entity/animal/equine/Llama$Variant;)V
+accessible method net/minecraft/world/entity/animal/feline/Cat setVariant (Lnet/minecraft/core/Holder;)V
+accessible method net/minecraft/world/entity/animal/fox/Fox setVariant (Lnet/minecraft/world/entity/animal/fox/Fox$Variant;)V
+accessible method net/minecraft/world/entity/animal/frog/Frog setVariant (Lnet/minecraft/core/Holder;)V
+accessible method net/minecraft/world/entity/animal/parrot/Parrot setVariant (Lnet/minecraft/world/entity/animal/parrot/Parrot$Variant;)V
+accessible method net/minecraft/world/entity/animal/pig/Pig setVariant (Lnet/minecraft/core/Holder;)V
+accessible method net/minecraft/world/entity/animal/rabbit/Rabbit setVariant (Lnet/minecraft/world/entity/animal/rabbit/Rabbit$Variant;)V
+accessible method net/minecraft/world/entity/animal/wolf/Wolf getVariant ()Lnet/minecraft/core/Holder;
+accessible method net/minecraft/world/entity/animal/wolf/Wolf setVariant (Lnet/minecraft/core/Holder;)V
+accessible method net/minecraft/world/entity/monster/Shulker setVariant (Ljava/util/Optional;)V

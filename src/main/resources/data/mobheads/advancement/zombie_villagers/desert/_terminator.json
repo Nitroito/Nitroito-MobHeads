@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:zombie_villagers/desert/desert_zombie_weaponsmith",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

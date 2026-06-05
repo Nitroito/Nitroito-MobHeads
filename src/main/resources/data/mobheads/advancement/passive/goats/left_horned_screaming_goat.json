@@ -1,0 +1,15 @@
+﻿{
+  "parent": "mobheads:passive/goats/screaming_goat",
+  "display": {
+    "icon": {"id": "minecraft:player_head", "components": {"minecraft:profile": {"properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNiYTgwOTNkMjI2ODhmM2I5ODE4NjVlMGZkMjk2OTIyYWQ1OTdiOWJmNWE1NWVmMjBhYzk0OTVkZDBmNjJlOCJ9fX0"}]}}},
+    "title": "Left-Horned Screaming Goat",
+    "description": "§7Drop Chance: §f5%\n§9+5% §6per Looting level§r",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "left_horned_screaming_goat": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNiYTgwOTNkMjI2ODhmM2I5ODE4NjVlMGZkMjk2OTIyYWQ1OTdiOWJmNWE1NWVmMjBhYzk0OTVkZDBmNjJlOCJ9fX0"}]}}}]}}
+  }
+}

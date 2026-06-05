@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:tamable/horses/skeleton_horse",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

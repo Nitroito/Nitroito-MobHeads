@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:tamable/nether/cold_strider",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

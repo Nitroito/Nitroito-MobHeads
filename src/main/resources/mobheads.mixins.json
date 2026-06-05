@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "pt.nitroito.mobheads.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "DyeItemMixin",
+    "EntityMixin",
+    "IllusionerMixin",
+    "NameTagMixin",
+    "RabbitMixin",
+    "SheepMixin",
+    "ShulkerMixin",
+    "SlimeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:monsters/aquatic/zombie_nautilus_coral",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

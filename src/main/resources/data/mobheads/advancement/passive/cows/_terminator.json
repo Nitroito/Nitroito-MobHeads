@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:passive/cows/brown_mooshroom",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

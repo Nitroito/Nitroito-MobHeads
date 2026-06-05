@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:passive/bears/polar_bear",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

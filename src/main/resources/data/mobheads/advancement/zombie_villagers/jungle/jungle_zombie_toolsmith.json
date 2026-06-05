@@ -1,0 +1,15 @@
+﻿{
+  "parent": "mobheads:zombie_villagers/jungle/jungle_zombie_shepherd",
+  "display": {
+    "icon": {"id": "minecraft:player_head", "components": {"minecraft:profile": {"properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY1OWNmZGQxMmY3ODUzMWIyYTI5YzIyYTA5YmNlMDQ0OTE2N2JmMDNjZjYyZThlYmI5MTkxNGQ3Yjg1NzU2NiJ9fX0="}]}}},
+    "title": "Jungle Zombie Toolsmith",
+    "description": "§7Drop Chance: §f10%\n§9+5% §6per Looting level§r",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "jungle_zombie_toolsmith": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY1OWNmZGQxMmY3ODUzMWIyYTI5YzIyYTA5YmNlMDQ0OTE2N2JmMDNjZjYyZThlYmI5MTkxNGQ3Yjg1NzU2NiJ9fX0="}]}}}]}}
+  }
+}

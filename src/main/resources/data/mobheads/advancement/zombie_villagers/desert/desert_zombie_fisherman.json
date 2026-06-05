@@ -1,0 +1,15 @@
+﻿{
+  "parent": "mobheads:zombie_villagers/desert/desert_zombie_farmer",
+  "display": {
+    "icon": {"id": "minecraft:player_head", "components": {"minecraft:profile": {"properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjQ0NGE3OWVjNDdhZTQ1NzAyNmFmMzY0ZTBiY2FkOWQ0NTRhNTJjZGE4NjQ4YWE0ODU4MzgzMjY2OGY4OTdmMCJ9fX0="}]}}},
+    "title": "Desert Zombie Fisherman",
+    "description": "§7Drop Chance: §f10%\n§9+5% §6per Looting level§r",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "desert_zombie_fisherman": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjQ0NGE3OWVjNDdhZTQ1NzAyNmFmMzY0ZTBiY2FkOWQ0NTRhNTJjZGE4NjQ4YWE0ODU4MzgzMjY2OGY4OTdmMCJ9fX0="}]}}}]}}
+  }
+}

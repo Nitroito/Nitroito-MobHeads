@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:tamable/parrots/gray_parrot",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:tamable/camels/camel_husk",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

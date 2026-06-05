@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:passive/pigs/warm_pig",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

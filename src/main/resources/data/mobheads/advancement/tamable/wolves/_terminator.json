@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:tamable/wolves/striped_wolf",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

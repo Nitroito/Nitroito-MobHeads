@@ -1,0 +1,15 @@
+﻿{
+  "parent": "mobheads:rainbow/sheep/purple_sheep",
+  "display": {
+    "icon": {"id": "minecraft:player_head", "components": {"minecraft:profile": {"properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjMzMzI2NzY1YTE5MGViZjkwZDU0ODZkNzFmMjBlMjU5N2U0YmVlMmEzOTFmZWNiYmQ4MGRlYmZlMWY4MmQ3OCJ9fX0="}]}}},
+    "title": "Jeb Sheep           ",
+    "description": "§7Drop Chance: §f25%\n§6Rename any §eSheep§6 \"jeb_\"§r",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "jeb_sheep": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjMzMzI2NzY1YTE5MGViZjkwZDU0ODZkNzFmMjBlMjU5N2U0YmVlMmEzOTFmZWNiYmQ4MGRlYmZlMWY4MmQ3OCJ9fX0="}]}}}]}}
+  }
+}

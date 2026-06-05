@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:rainbow/sheep/jeb_sheep",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+  "parent": "mobheads:monsters/root",
+  "display": {
+    "icon": { "id": "minecraft:iron_sword"},
+    "title": "Classic",
+    "description": "",
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "zombie": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:zombie_head"}]}},
+    "skeleton": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:skeleton_skull"}]}},
+    "creeper": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:creeper_head"}]}},
+    "piglin": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:piglin_head"}]}},
+    "wither_skeleton": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:wither_skeleton_skull"}]}},
+    "ender_dragon": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:dragon_head"}]}}
+  }
+}

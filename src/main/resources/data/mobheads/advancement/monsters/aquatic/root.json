@@ -1,0 +1,19 @@
+﻿{
+  "parent": "mobheads:monsters/root",
+  "display": {
+    "icon": { "id": "minecraft:prismarine_shard"},
+    "title": "Aquatic",
+    "description": "",
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "drowned": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg0ZGY3OWM0OTEwNGIxOThjZGFkNmQ5OWZkMGQwYmNmMTUzMWM5MmQ0YWI2MjY5ZTQwYjdkM2NiYmI4ZTk4YyJ9fX0="}]}}}]}},
+    "guardian": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGZiNjc1Y2I1YTdlM2ZkMjVlMjlkYTgyNThmMjRmYzAyMGIzZmE5NTAzNjJiOGJjOGViMjUyZTU2ZTc0In19fQ=="}]}}}]}},
+    "elder_guardian": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM3OTc0ODJhMTRiZmNiODc3MjU3Y2IyY2ZmMWI2ZTZhOGI4NDEzMzM2ZmZiNGMyOWE2MTM5Mjc4YjQzNmIifX19"}]}}}]}},
+    "zombie_nautilus": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5YTkzMzM3NmRhNDRjMzM5MTMwN2NiOWY0Y2YwM2YxNmYzYTU0ZjQ5NWZkNWExMWJhZDhhMzczZjlkNTcyMCJ9fX0="}]}}}]}},
+    "zombie_nautilus_coral": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJlMjUwMWRlZjk0NTQzMTEwY2NjNmNlYmM0ZGVhYzdlZjFlZmYzMmE2MmYwZTMxNzdiMzBiMWZlODgwNTk1YyJ9fX0"}]}}}]}}
+  }
+}

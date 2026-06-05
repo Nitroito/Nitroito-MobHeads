@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:monsters/end/endermite",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

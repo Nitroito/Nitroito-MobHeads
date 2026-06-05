@@ -1,0 +1,7 @@
+﻿{
+  "parent": "mobheads:passive/chickens/warm_chicken",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}
