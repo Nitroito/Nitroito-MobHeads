@@ -5,6 +5,12 @@
   "name": "${name}",
   "description": "Adds mob heads to the game with advancements to track the progression",
   "authors": ["${author}"],
+  "icon": "assets/mobheads/icon.png",
+  "contact": {
+      "homepage": "",
+      "sources": "https://github.com/Nitroito/Nitroito-MobHeads",
+      "issues": "https://github.com/Nitroito/Nitroito-MobHeads/issues"
+  },
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
@@ -32,8 +38,8 @@
   ],
   "depends": {
     "minecraft": ">=${minecraft_version}",
-    "fabricloader": ">=${loader_version}",
-    "java": ">=21",
+    "fabricloader": ">=${fabric_loader}",
+    "java": ">=25",
     "fabric-api": "*"
   }
 }

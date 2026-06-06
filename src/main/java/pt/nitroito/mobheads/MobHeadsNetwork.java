@@ -13,7 +13,7 @@ public class MobHeadsNetwork {
     public static final CustomPacketPayload.Type<SwingPlayerHandPacket> SWUING_PLAYER_HANDE_PACKET_ID = new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath(MobHeads.NAMESPACE, "player_swing_hand"));
 
     public static void register(){
-        PayloadTypeRegistry.playS2C().register(SWUING_PLAYER_HANDE_PACKET_ID, SwingPlayerHandPacket.CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(SWUING_PLAYER_HANDE_PACKET_ID, SwingPlayerHandPacket.CODEC);
     }
 
     public static void sendSwingPlayerHandPacket(Player player, InteractionHand hand){

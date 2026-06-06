@@ -11,6 +11,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
@@ -29,7 +30,7 @@ public class EntityHead{
     private final float dropChance;
     private final String noteblockSound;
     private final String texture;
-    private final ItemStack mobHead;
+    //private final ItemStack mobHead;
 
     public EntityHead (String group, String id, String entityName, float dropChance, String noteblockSound, String texture) {
         this.key = Identifier.fromNamespaceAndPath(MobHeads.NAMESPACE, id);
@@ -38,11 +39,6 @@ public class EntityHead{
         this.dropChance = dropChance;
         this.noteblockSound = noteblockSound;
         this.texture = texture;
-        if (isValidIdentifier(texture)){
-            mobHead = makeEntityHead(Identifier.parse(texture));
-        }else{
-            mobHead = makeEntityHead(Identifier.withDefaultNamespace("player_head"));
-        }
     }
 
     public Identifier getKey() { return this.key; }
@@ -51,10 +47,10 @@ public class EntityHead{
     public float getDropChance() { return this.dropChance; }
     public String getNoteblockSound() { return this.noteblockSound; }
     public String getTexture() { return this.texture; }
-    public ItemStack getHeadStack(int count) { return this.mobHead.copyWithCount(1); }
 
-    private boolean isValidIdentifier(String input) {
-        return Optional.ofNullable(Identifier.tryParse(input)).isPresent();
+
+    public ItemStack getHeadStack(int count) {
+        return makeEntityHead(Identifier.withDefaultNamespace("player_head"));
     }
 
     private ItemStack makeEntityHead(Identifier identifier) {

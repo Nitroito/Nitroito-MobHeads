@@ -31,7 +31,7 @@ public abstract class NameTagMixin {
                 cir.cancel();
             }
             if ((livingEntity instanceof Rabbit rabbit)) {
-                if (rabbit.getVariant()==Rabbit.Variant.WHITE_SPLOTCHED && !MobHeadsConfig.spawnToastRabbit && customName.equals("Toast Bunny")) {
+                if (rabbit.getVariant()==Rabbit.Variant.WHITE_SPLOTCHED && !MobHeadsConfig.spawnToastRabbit && customName.equals("Toast")) {
                     itemStack.shrink(1);
                     rabbit.getEntityData().set(Entity.DATA_CUSTOM_NAME,Optional.of(Component.literal("Toast")));
                     rabbit.playSound(SoundEvents.RABBIT_AMBIENT);
