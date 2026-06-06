@@ -17,32 +17,32 @@ public class MobHeadsConfigScreen {
 
         //[ General Settings ]****************************************************************************************//
         ConfigCategory toggles = builder.getOrCreateCategory(Component.literal("General"));
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Colored Sheep"),config.spawnColoredSheeps)
+        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn Colored Sheep"),config.spawnColoredSheeps)
             .setDefaultValue(false)
             .setTooltip(Component.literal("Allow colored sheep to spawn naturally"))
             .setSaveConsumer(v -> config.spawnColoredSheeps = v)
             .build());
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Colored Slimes"),config.spawnColoredSlimes)
+        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn Colored Slimes"),config.spawnColoredSlimes)
             .setDefaultValue(false)
             .setTooltip(Component.literal("Allow colored slime to spawn naturally"))
             .setSaveConsumer(v -> config.spawnColoredSlimes = v)
             .build());
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Colored Shulkers"),config.spawnColoredShulkers)
+        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn Colored Shulkers"),config.spawnColoredShulkers)
             .setDefaultValue(false)
             .setTooltip(Component.literal("Allow colored shulker to spawn naturally"))
             .setSaveConsumer(v -> config.spawnColoredShulkers = v)
             .build());
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Jeb Sheep"),config.spawnJebSheep)
+        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn \"Jeb Sheep\""),config.spawnJebSheep)
             .setDefaultValue(false)
             .setTooltip(Component.literal("Allow \"jeb_\" sheep to spawn naturally"))
             .setSaveConsumer(v -> config.spawnJebSheep = v)
             .build());
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Toast Rabbit"),config.spawnToastRabbit)
+        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn \"Toast\" Bunny"),config.spawnToastRabbit)
             .setDefaultValue(false)
-            .setTooltip(Component.literal("Allow \"Toast\" rabbit to spawn naturally"))
+            .setTooltip(Component.literal("Allow \"Toast\" bunny to spawn naturally"))
             .setSaveConsumer(v -> config.spawnToastRabbit = v)
             .build());
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Killer Rabbit"),config.spawnKillerRabbit)
+        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn \"Killer Bunny"),config.spawnKillerRabbit)
             .setDefaultValue(false)
             .setTooltip(Component.literal("Allow \"The Killer Bunny\" to spawn naturally"))
             .setSaveConsumer(v -> config.spawnKillerRabbit = v)
@@ -50,34 +50,34 @@ public class MobHeadsConfigScreen {
 
         //[ Spawn Chances ]*******************************************************************************************//
         ConfigCategory chances = builder.getOrCreateCategory(Component.literal("Spawn Chances"));
-        chances.addEntry(entry.startFloatField(Component.literal("Colored Sheep Chance"),config.spawnColoredSheepChance)
+        chances.addEntry(entry.startFloatField(Component.literal("Colored Sheep"),config.spawnColoredSheepChance)
             .setDefaultValue(0.5f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance for colored Sheep spawn"))
+            .setTooltip(Component.literal("Chance that a colored Sheep spawns naturally"))
             .setSaveConsumer(v -> config.spawnColoredSheepChance = v)
             .build());
-        chances.addEntry(entry.startFloatField(Component.literal("Colored Slime Chance"),config.spawnColoredSlimeChance)
+        chances.addEntry(entry.startFloatField(Component.literal("Colored Slime"),config.spawnColoredSlimeChance)
             .setDefaultValue(0.5f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance for colored Slime spawn"))
+            .setTooltip(Component.literal("Chance that a colored Slime spawns naturally"))
             .setSaveConsumer(v -> config.spawnColoredSlimeChance = v)
             .build());
-        chances.addEntry(entry.startFloatField(Component.literal("Colored Shulker Chance"),config.spawnColoredShulkerChance)
+        chances.addEntry(entry.startFloatField(Component.literal("Colored Shulker"),config.spawnColoredShulkerChance)
             .setDefaultValue(0.5f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance for colored Shulker spawn"))
+            .setTooltip(Component.literal("Chance that a colored Shulker spawns naturally"))
             .setSaveConsumer(v -> config.spawnColoredShulkerChance = v)
             .build());
-        chances.addEntry(entry.startFloatField(Component.literal("\"Jeb_Sheep\" Chance"),config.spawnKillerRabbitChance)
+        chances.addEntry(entry.startFloatField(Component.literal("\"Jeb Sheep\""),config.spawnKillerRabbitChance)
             .setDefaultValue(0.01f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance for Jeb_Sheep spawn"))
+            .setTooltip(Component.literal("Chance the a Jeb_Sheep spawns naturally"))
             .setSaveConsumer(v -> config.spawnKillerRabbitChance = v)
             .build());
-        chances.addEntry(entry.startFloatField(Component.literal("\"The Killer Bunny\" Chance"),config.spawnKillerRabbitChance)
+        chances.addEntry(entry.startFloatField(Component.literal("\"The Killer Bunny\""),config.spawnKillerRabbitChance)
             .setDefaultValue(0.01f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance for Killer Rabbit spawn"))
+            .setTooltip(Component.literal("Chance that a \"Killer Rabbit\" spawns naturally"))
             .setSaveConsumer(v -> config.spawnKillerRabbitChance = v)
             .build());
-        chances.addEntry(entry.startFloatField(Component.literal("\"Toast\" Rabbit Chance"),config.spawnToastRabbitChance)
+        chances.addEntry(entry.startFloatField(Component.literal("\"Toast\" Bunny"),config.spawnToastRabbitChance)
             .setDefaultValue(0.01f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance for Toast Rabbit spawn"))
+            .setTooltip(Component.literal("Chance that a \"Toast\" Rabbit spawn"))
             .setSaveConsumer(v -> config.spawnToastRabbitChance = v)
             .build());
 
