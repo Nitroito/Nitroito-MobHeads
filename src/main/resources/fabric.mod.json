@@ -7,7 +7,7 @@
   "authors": ["${author}"],
   "icon": "assets/mobheads/icon.png",
   "contact": {
-      "homepage": "",
+      "homepage": "https://modrinth.com/mod/nitroito-mobheads",
       "sources": "https://github.com/Nitroito/Nitroito-MobHeads",
       "issues": "https://github.com/Nitroito/Nitroito-MobHeads/issues"
   },

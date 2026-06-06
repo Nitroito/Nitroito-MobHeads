@@ -45,7 +45,7 @@ processResources {
                 "name": project.mod_name,
                 "author": project.mod_author,
                 "minecraft_version": project.minecraft_version,
-                "loader_version": project.fabric_loader
+                "fabric_loader": project.fabric_loader
     }
 }
 

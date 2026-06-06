@@ -13,7 +13,7 @@ Illusioner Summoning
 - Compatible with existing worlds
 
 ## Downloads
-Modrinth: [to_be_added]
+Modrinth: https://modrinth.com/mod/nitroito-mobheads 
 
 ## Links
 **Source**: https://github.com/Nitroito/Nitroito-MobHeads<br>
