@@ -18,11 +18,9 @@ public class MobHeadsRandom {
         public static float nextFloat(){
             return randomMachine.nextFloat();
         }
-
         public static int nextInt(int bound){
             return randomMachine.nextInt(bound);
         }
-
         public static DyeColor nextColor(){
             return dyeColors[randomMachine.nextInt(dyeColors.length)];
         }

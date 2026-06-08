@@ -2,8 +2,8 @@
   "parent": "mobheads:monsters/root",
   "display": {
     "icon": { "id": "minecraft:iron_sword"},
-    "title": "Classic",
-    "description": "",
+    "title": {"translate": "mobheads.advancement.monsters.vanilla.title"},
+    "description": {"translate": "mobheads.advancement.monsters.vanilla.description"},
     "frame": "goal",
     "show_toast": false,
     "announce_to_chat": true,

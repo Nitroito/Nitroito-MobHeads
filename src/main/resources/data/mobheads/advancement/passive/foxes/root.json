@@ -2,15 +2,15 @@
   "parent": "mobheads:passive/root",
   "display": {
     "icon": { "id": "minecraft:sweet_berries"},
-    "title": "Foxes",
-    "description": "",
+    "title": {"translate": "mobheads.advancement.passive.foxes.title"},
+    "description": {"translate": "mobheads.advancement.passive.foxes.description"},
     "frame": "goal",
     "show_toast": false,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "red_fox": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmJkZmZlOTY0MmZjNTI4MGU2OGNlNDg4ZTNiY2Y0NDA2ODdlZDNiYzU2NmUzMTVhZjgyNGY0MjhiNmZmNzE1In19fQ=="}]}}}]}},
-    "white_fox": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDE0MzYzNzdlYjRjNGI0ZTM5ZmIwZTFlZDg4OTlmYjYxZWUxODE0YTkxNjliOGQwODcyOWVmMDFkYzg1ZDFiYSJ9fX0="}]}}}]}}
+    "red_fox": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "NitroitoMobHeads", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmJkZmZlOTY0MmZjNTI4MGU2OGNlNDg4ZTNiY2Y0NDA2ODdlZDNiYzU2NmUzMTVhZjgyNGY0MjhiNmZmNzE1In19fQ=="}]}}}]}},
+    "white_fox": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "NitroitoMobHeads", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDE0MzYzNzdlYjRjNGI0ZTM5ZmIwZTFlZDg4OTlmYjYxZWUxODE0YTkxNjliOGQwODcyOWVmMDFkYzg1ZDFiYSJ9fX0="}]}}}]}}
   }
 }

@@ -2,8 +2,8 @@
   "parent": "mobheads:monsters/vanilla/zombie",
   "display": {
     "icon": {"id": "minecraft:skeleton_skull"},
-    "title": "Skeleton                 ",
-    "description": "§7Drop Chance: §f100%\n§6Killed by a §eCharged Creeper§r",
+    "title": {"translate": "mobheads.advancement.monsters.vanilla.skeleton.title"},
+    "description": {"translate": "mobheads.advancement.monsters.vanilla.skeleton.description"},
     "description1": "§7Drop Chance: §f1%\n§9+5% §6per Looting level§r",
     "frame": "task",
     "show_toast": true,

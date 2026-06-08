@@ -14,8 +14,11 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import pt.nitroito.mobheads.MobHeads;
 import pt.nitroito.mobheads.utils.MobHeadsRandom;
 import pt.nitroito.mobheads.MobHeadsConfig;
+import java.util.Optional;
+
 
 @Mixin(Sheep.class)
 public abstract class SheepMixin {
@@ -25,7 +28,7 @@ public abstract class SheepMixin {
     @Inject(method="finalizeSpawn", at=@At("TAIL"))
     private void finalizeSpawn(ServerLevelAccessor level,DifficultyInstance difficulty,EntitySpawnReason reason,SpawnGroupData data,CallbackInfoReturnable<SpawnGroupData> cir) {
         if (MobHeadsConfig.canSpawnJebSheep()){
-           this.asEntity().setCustomName(Component.literal("jeb_"));
+            this.asEntity().getEntityData().set(Entity.DATA_CUSTOM_NAME, Optional.of(Component.literal(MobHeads.EASTER_EGG_JEB_SHEEP)));
         }else if (MobHeadsConfig.canSpawnColoredSheep()){
             this.setColor(MobHeadsRandom.nextColor());
         }

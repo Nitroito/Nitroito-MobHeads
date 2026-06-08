@@ -2,8 +2,8 @@
   "parent": "mobheads:monsters/vanilla/creeper",
   "display": {
     "icon": {"id": "minecraft:piglin_head"},
-    "title": "Piglin                   ",
-    "description": "§7Drop Chance: §f100%\n§6Killed by a §eCharged Creeper§r",
+    "title": {"translate": "mobheads.advancement.monsters.vanilla.piglin.title"},
+    "description": {"translate": "mobheads.advancement.monsters.vanilla.piglin.description"},
     "description1": "§7Drop Chance: §f1%\n§9+5% §6per Looting level§r",
     "frame": "task",
     "show_toast": true,

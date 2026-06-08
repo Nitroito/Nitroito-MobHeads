@@ -12,22 +12,18 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.DyeItem;
 import net.minecraft.world.item.ItemStack;
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Overwrite;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import pt.nitroito.mobheads.MobHeadsData;
 import pt.nitroito.mobheads.MobHeadsConfig;
 import pt.nitroito.mobheads.MobHeadsNetwork;
-
 import java.util.Optional;
+
 
 @Mixin(DyeItem.class)
 public abstract class DyeItemMixin {
-    //@Shadow @Final private DyeColor dyeColor;
 
     @Inject(method="interactLivingEntity", at = @At("HEAD"), cancellable = true)
 	public void interactLivingEntity(ItemStack itemStack, Player player, LivingEntity livingEntity, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResult> cir) {

@@ -15,9 +15,11 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import pt.nitroito.mobheads.MobHeads;
 import pt.nitroito.mobheads.MobHeadsConfig;
 
 import java.util.Optional;
+
 
 @Mixin(NameTagItem.class)
 public abstract class NameTagMixin {
@@ -26,7 +28,7 @@ public abstract class NameTagMixin {
    	public void interactLivingEntity(ItemStack itemStack, Player player, LivingEntity livingEntity, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResult> cir) {
         if (!player.level().isClientSide() && livingEntity.isAlive() && itemStack.getCustomName()!=null) {
             String customName = itemStack.getCustomName().getString();
-            if ((livingEntity instanceof Sheep) && MobHeadsConfig.spawnJebSheep && customName.equals("jeb_")) {
+            if ((livingEntity instanceof Sheep) && MobHeadsConfig.spawnJebSheep && customName.equals(MobHeads.EASTER_EGG_JEB_SHEEP)) {
                 cir.setReturnValue(InteractionResult.SUCCESS);
                 cir.cancel();
             }
@@ -37,13 +39,13 @@ public abstract class NameTagMixin {
                     rabbit.playSound(SoundEvents.RABBIT_AMBIENT);
                     cir.setReturnValue(InteractionResult.SUCCESS);
                     cir.cancel();
-                } else if (rabbit.getVariant()==Rabbit.Variant.WHITE && !MobHeadsConfig.spawnKillerRabbit && customName.equals("Killer Bunny")) {
+                } else if (rabbit.getVariant()==Rabbit.Variant.WHITE && !MobHeadsConfig.spawnKillerRabbit && customName.equals(MobHeads.EASTER_EGG_KILLER_RABBIT)) {
                     itemStack.shrink(1);
                     rabbit.setVariant(Rabbit.Variant.EVIL);
                     rabbit.playSound(SoundEvents.RABBIT_ATTACK);
                     cir.setReturnValue(InteractionResult.SUCCESS);
                     cir.cancel();
-                }else if(customName.equals("Killer Bunny")){
+                }else if(customName.equals(MobHeads.EASTER_EGG_KILLER_RABBIT)){
                     cir.setReturnValue(InteractionResult.SUCCESS);
                     cir.cancel();
                 }
