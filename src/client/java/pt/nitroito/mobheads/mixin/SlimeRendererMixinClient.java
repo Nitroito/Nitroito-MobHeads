@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import pt.nitroito.mobheads.MobHeads;
 import pt.nitroito.mobheads.MobHeadsData;
 
+
 @Mixin(SlimeRenderer.class)
 public abstract class SlimeRendererMixinClient {
     @Mutable @Shadow @Final public static Identifier SLIME_LOCATION;

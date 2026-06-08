@@ -43,9 +43,10 @@ import net.minecraft.world.entity.npc.villager.Villager;
 import net.minecraft.world.entity.npc.villager.VillagerData;
 import net.minecraft.world.entity.npc.villager.VillagerProfession;
 import net.minecraft.world.item.DyeColor;
+import pt.nitroito.mobheads.MobHeads;
 import pt.nitroito.mobheads.MobHeadsData;
-
 import java.util.Optional;
+
 
 public class EntityHeadResolver {
 
@@ -82,11 +83,11 @@ public class EntityHeadResolver {
 
     public static Optional<EntityHead> getAxolotlHead(Axolotl axolotl) {
         return switch (axolotl.getVariant()){
-            case Axolotl.Variant.BLUE -> EntityHeadCollection.get("blue_axolotl");
-            case Axolotl.Variant.CYAN -> EntityHeadCollection.get("cyan_axolotl");
-            case Axolotl.Variant.GOLD -> EntityHeadCollection.get("gold_axolotl");
-            case Axolotl.Variant.LUCY -> EntityHeadCollection.get("lucy_axolotl");
-            case Axolotl.Variant.WILD -> EntityHeadCollection.get("wild_axolotl");
+            case BLUE -> EntityHeadCollection.get("blue_axolotl");
+            case CYAN -> EntityHeadCollection.get("cyan_axolotl");
+            case GOLD -> EntityHeadCollection.get("gold_axolotl");
+            case LUCY -> EntityHeadCollection.get("lucy_axolotl");
+            case WILD -> EntityHeadCollection.get("wild_axolotl");
         };
     }
 
@@ -223,7 +224,7 @@ public class EntityHeadResolver {
     }
 
     public static Optional<EntityHead> getSheepHead(Sheep sheep) {
-        if (sheep.getDisplayName().getString().equals("jeb_")) {
+        if (sheep.getDisplayName().getString().equals(MobHeads.EASTER_EGG_JEB_SHEEP)) {
             return EntityHeadCollection.get("jeb_sheep");
         }
         return EntityHeadCollection.get(sheep.getColor().getName()+"_sheep");

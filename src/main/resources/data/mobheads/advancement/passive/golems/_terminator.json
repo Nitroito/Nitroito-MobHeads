@@ -1,5 +1,5 @@
 ﻿{
-  "parent": "mobheads:passive/gollems/snowman",
+  "parent": "mobheads:passive/golems/snowman",
   "hidden": true,
   "criteria": {
     "tick": {"trigger": "minecraft:tick"}

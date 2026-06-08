@@ -6,6 +6,7 @@ import pt.nitroito.mobheads.config.MobHeadsConfigEvents;
 import pt.nitroito.mobheads.config.MobHeadsConfigFile;
 import pt.nitroito.mobheads.utils.MobHeadsRandom;
 
+
 public class MobHeadsConfig {
     public static MobHeadsConfigFile CONFIG_FILE;
 
@@ -30,12 +31,12 @@ public class MobHeadsConfig {
     public static boolean canSpawnToastRabbit(){return (MobHeadsConfig.spawnToastRabbit && MobHeadsRandom.nextFloat()<=MobHeadsConfig.spawnToastRabbitChance);}
 
     public static void loadConfigFile(MobHeadsConfigFile config) {
-        spawnColoredSheeps = config.spawnColoredSheeps;
+        spawnColoredSheeps = config.spawnColoredSheep;
         spawnColoredSheepChance = config.spawnColoredSheepChance;
         spawnColoredSlimes = config.spawnColoredSlimes;
-        spawnColoredSlimeChance = config.spawnColoredSlimeChance;
+        spawnColoredSlimeChance = config.spawnColoredSlimesChance;
         spawnColoredShulkers = config.spawnColoredShulkers;
-        spawnColoredShulkerChance = config.spawnColoredShulkerChance;
+        spawnColoredShulkerChance = config.spawnColoredShulkersChance;
         spawnJebSheep = config.spawnJebSheep;
         spawnJebSheepChance = config.spawnJebSheepChance;
         spawnKillerRabbit = config.spawnKillerRabbit;

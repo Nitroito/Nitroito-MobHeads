@@ -1,12 +1,12 @@
 # User-specific stuff
 .idea/
-
 *.iml
 *.ipr
 *.iws
 
 # IntelliJ
 out/
+
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -114,8 +114,7 @@ gradle-app.setting
 run/
 runs/
 build/
-out/
+docs/
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
-/images/icon.xcf

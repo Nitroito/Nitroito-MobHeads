@@ -9,11 +9,12 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import pt.nitroito.mobheads.network.SwingPlayerHandPacket;
 
+
 public class MobHeadsNetwork {
-    public static final CustomPacketPayload.Type<SwingPlayerHandPacket> SWUING_PLAYER_HANDE_PACKET_ID = new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath(MobHeads.NAMESPACE, "player_swing_hand"));
+    public static final CustomPacketPayload.Type<SwingPlayerHandPacket> SWING_PLAYER_HANDE_PACKET_ID = new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath(MobHeads.NAMESPACE, "player_swing_hand"));
 
     public static void register(){
-        PayloadTypeRegistry.playS2C().register(SWUING_PLAYER_HANDE_PACKET_ID, SwingPlayerHandPacket.CODEC);
+        PayloadTypeRegistry.playS2C().register(SWING_PLAYER_HANDE_PACKET_ID, SwingPlayerHandPacket.CODEC);
     }
 
     public static void sendSwingPlayerHandPacket(Player player, InteractionHand hand){

@@ -20,8 +20,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import pt.nitroito.mobheads.MobHeadsData;
 import pt.nitroito.mobheads.MobHeadsConfig;
 import pt.nitroito.mobheads.MobHeadsNetwork;
-
 import java.util.Optional;
+
 
 @Mixin(DyeItem.class)
 public abstract class DyeItemMixin {

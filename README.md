@@ -3,7 +3,7 @@
 MobHeads is a lightweight collection mod that adds collectible heads for every vanilla creature in Minecraft.
 MobHeads focuses on collecting, exploration, and achievement while staying true to the game.
 
-![Illusioner Summoning](images/illusioner.png)
+![Illusioner Summoning](src/main/resources/assets/mobheads/illusioner.png)
 Illusioner Summoning
 ## Features
 - Collect heads from every vanilla mob and variant
@@ -13,11 +13,11 @@ Illusioner Summoning
 - Compatible with existing worlds
 
 ## Downloads
-Modrinth: https://modrinth.com/mod/nitroito-mobheads 
+**Modrinth:** https://modrinth.com/mod/nitroito-mobheads 
 
 ## Links
-**Source**: https://github.com/Nitroito/Nitroito-MobHeads<br>
-**Issues**: https://github.com/Nitroito/Nitroito-MobHeads/issues
+**Source:** https://github.com/Nitroito/Nitroito-MobHeads<br>
+**Issues:** https://github.com/Nitroito/Nitroito-MobHeads/issues
 
 ---
 

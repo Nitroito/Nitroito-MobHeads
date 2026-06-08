@@ -6,11 +6,12 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.world.InteractionHand;
 import pt.nitroito.mobheads.MobHeadsNetwork;
 
+
 public record SwingPlayerHandPacket(InteractionHand hand) implements CustomPacketPayload {
 
     @Override
     public Type<? extends CustomPacketPayload> type() {
-        return MobHeadsNetwork.SWUING_PLAYER_HANDE_PACKET_ID;
+        return MobHeadsNetwork.SWING_PLAYER_HANDE_PACKET_ID;
     }
 
     public static final StreamCodec<ByteBuf, SwingPlayerHandPacket> CODEC = new StreamCodec<>() {

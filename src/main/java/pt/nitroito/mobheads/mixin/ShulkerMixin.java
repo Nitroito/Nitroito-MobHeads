@@ -13,8 +13,8 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import pt.nitroito.mobheads.utils.MobHeadsRandom;
 import pt.nitroito.mobheads.MobHeadsConfig;
-
 import java.util.Optional;
+
 
 @Mixin(Shulker.class)
 public abstract class ShulkerMixin {

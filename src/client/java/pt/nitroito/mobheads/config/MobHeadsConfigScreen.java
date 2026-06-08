@@ -6,82 +6,83 @@ import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import pt.nitroito.mobheads.MobHeads;
 import pt.nitroito.mobheads.MobHeadsConfig;
 
 public class MobHeadsConfigScreen {
 
     public static Screen create(Screen parent) {
         MobHeadsConfigFile config =AutoConfig.getConfigHolder(MobHeadsConfigFile.class).getConfig();
-        ConfigBuilder builder = ConfigBuilder.create().setParentScreen(parent).setTitle(Component.literal("MobHeads Settings"));
+        ConfigBuilder builder = ConfigBuilder.create().setParentScreen(parent).setTitle(Component.translatable(MobHeads.NAMESPACE+".config.title"));
         ConfigEntryBuilder entry = builder.entryBuilder();
 
-        //[ General Settings ]****************************************************************************************//
-        ConfigCategory toggles = builder.getOrCreateCategory(Component.literal("General"));
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn Colored Sheep"),config.spawnColoredSheeps)
+        //==============================================================================================================
+        // GENERAL SETTINGS
+        //==============================================================================================================
+        ConfigCategory toggles = builder.getOrCreateCategory(Component.translatable(MobHeads.NAMESPACE+".config.general"));
+        toggles.addEntry(entry.startBooleanToggle(Component.translatable(MobHeads.NAMESPACE + ".config.general.spawn_colored_sheep"), config.spawnColoredSheep)
+            .setTooltip(Component.translatable(MobHeads.NAMESPACE + ".config.general.tooltip.dye_usage"))
             .setDefaultValue(false)
-            .setTooltip(Component.literal("Allow colored sheep to spawn naturally"))
-            .setSaveConsumer(v -> config.spawnColoredSheeps = v)
+            .setSaveConsumer(value -> config.spawnColoredSheep = value)
             .build());
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn Colored Slimes"),config.spawnColoredSlimes)
+        toggles.addEntry(entry.startBooleanToggle(Component.translatable(MobHeads.NAMESPACE+".config.general.spawn_colored_slimes"),config.spawnColoredSlimes)
+            .setTooltip(Component.translatable(MobHeads.NAMESPACE+".config.general.tooltip.dye_usage"))
             .setDefaultValue(false)
-            .setTooltip(Component.literal("Allow colored slime to spawn naturally"))
-            .setSaveConsumer(v -> config.spawnColoredSlimes = v)
+            .setSaveConsumer(value -> config.spawnColoredSlimes = value)
             .build());
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn Colored Shulkers"),config.spawnColoredShulkers)
+        toggles.addEntry(entry.startBooleanToggle(Component.translatable(MobHeads.NAMESPACE+".config.general.spawn_colored_shulkers"),config.spawnColoredShulkers)
+            .setTooltip(Component.translatable(MobHeads.NAMESPACE+".config.general.tooltip.dye_usage"))
             .setDefaultValue(false)
-            .setTooltip(Component.literal("Allow colored shulker to spawn naturally"))
-            .setSaveConsumer(v -> config.spawnColoredShulkers = v)
+            .setSaveConsumer(value -> config.spawnColoredShulkers = value)
             .build());
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn \"Jeb Sheep\""),config.spawnJebSheep)
+        toggles.addEntry(entry.startBooleanToggle(Component.translatable(MobHeads.NAMESPACE+".config.general.spawn_jeb_sheep"),config.spawnJebSheep)
+            .setTooltip(Component.translatable(MobHeads.NAMESPACE+".config.general.tooltip.name_tag_usage",MobHeads.EASTER_EGG_JEB_SHEEP))
             .setDefaultValue(false)
-            .setTooltip(Component.literal("Allow \"jeb_\" sheep to spawn naturally"))
-            .setSaveConsumer(v -> config.spawnJebSheep = v)
+            .setSaveConsumer(value -> config.spawnJebSheep = value)
             .build());
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn \"Toast\" Bunny"),config.spawnToastRabbit)
+        toggles.addEntry(entry.startBooleanToggle(Component.translatable(MobHeads.NAMESPACE+".config.general.spawn_killer_rabbit"),config.spawnToastRabbit)
+            .setTooltip(Component.translatable(MobHeads.NAMESPACE+".config.general.tooltip.name_tag_usage",MobHeads.EASTER_EGG_TOAST_RABBIT))
             .setDefaultValue(false)
-            .setTooltip(Component.literal("Allow \"Toast\" bunny to spawn naturally"))
-            .setSaveConsumer(v -> config.spawnToastRabbit = v)
+            .setSaveConsumer(value -> config.spawnToastRabbit = value)
             .build());
-        toggles.addEntry(entry.startBooleanToggle(Component.literal("Spawn \"Killer Bunny"),config.spawnKillerRabbit)
+        toggles.addEntry(entry.startBooleanToggle(Component.translatable(MobHeads.NAMESPACE+".config.general.spawn_killer_rabbit"),config.spawnKillerRabbit)
+            .setTooltip(Component.translatable(MobHeads.NAMESPACE+".config.general.tooltip.name_tag_usage",MobHeads.EASTER_EGG_KILLER_RABBIT))
             .setDefaultValue(false)
-            .setTooltip(Component.literal("Allow \"The Killer Bunny\" to spawn naturally"))
-            .setSaveConsumer(v -> config.spawnKillerRabbit = v)
+            .setSaveConsumer(value -> config.spawnKillerRabbit = value)
             .build());
 
-        //[ Spawn Chances ]*******************************************************************************************//
-        ConfigCategory chances = builder.getOrCreateCategory(Component.literal("Spawn Chances"));
-        chances.addEntry(entry.startFloatField(Component.literal("Colored Sheep"),config.spawnColoredSheepChance)
+        //==============================================================================================================
+        // SPAWN CHANCES
+        //==============================================================================================================
+        ConfigCategory chances = builder.getOrCreateCategory(Component.translatable(MobHeads.NAMESPACE+".config.spawn_chances"));
+        chances.addEntry(entry.startFloatField(Component.translatable(MobHeads.NAMESPACE+".config.spawn_chances.colored_sheep"),config.spawnColoredSheepChance)
             .setDefaultValue(0.5f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance that a colored Sheep spawns naturally"))
-            .setSaveConsumer(v -> config.spawnColoredSheepChance = v)
+            .setSaveConsumer(value -> config.spawnColoredSheepChance = value)
             .build());
-        chances.addEntry(entry.startFloatField(Component.literal("Colored Slime"),config.spawnColoredSlimeChance)
+        chances.addEntry(entry.startFloatField(Component.translatable(MobHeads.NAMESPACE+".config.spawn_chances.colored_slimes"),config.spawnColoredSlimesChance)
             .setDefaultValue(0.5f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance that a colored Slime spawns naturally"))
-            .setSaveConsumer(v -> config.spawnColoredSlimeChance = v)
+            .setSaveConsumer(value -> config.spawnColoredSlimesChance = value)
             .build());
-        chances.addEntry(entry.startFloatField(Component.literal("Colored Shulker"),config.spawnColoredShulkerChance)
+        chances.addEntry(entry.startFloatField(Component.translatable(MobHeads.NAMESPACE+".config.spawn_chances.colored_shulkers"),config.spawnColoredShulkersChance)
             .setDefaultValue(0.5f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance that a colored Shulker spawns naturally"))
-            .setSaveConsumer(v -> config.spawnColoredShulkerChance = v)
+            .setSaveConsumer(value -> config.spawnColoredShulkersChance = value)
             .build());
-        chances.addEntry(entry.startFloatField(Component.literal("\"Jeb Sheep\""),config.spawnKillerRabbitChance)
+        chances.addEntry(entry.startFloatField(Component.translatable(MobHeads.NAMESPACE+".config.spawn_chances.jeb_sheep"),config.spawnKillerRabbitChance)
             .setDefaultValue(0.01f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance the a Jeb_Sheep spawns naturally"))
-            .setSaveConsumer(v -> config.spawnKillerRabbitChance = v)
+            .setSaveConsumer(value -> config.spawnKillerRabbitChance = value)
             .build());
-        chances.addEntry(entry.startFloatField(Component.literal("\"The Killer Bunny\""),config.spawnKillerRabbitChance)
+        chances.addEntry(entry.startFloatField(Component.translatable(MobHeads.NAMESPACE+".config.spawn_chances.toast_rabbit"),config.spawnToastRabbitChance)
             .setDefaultValue(0.01f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance that a \"Killer Rabbit\" spawns naturally"))
-            .setSaveConsumer(v -> config.spawnKillerRabbitChance = v)
+            .setSaveConsumer(value -> config.spawnToastRabbitChance = value)
             .build());
-        chances.addEntry(entry.startFloatField(Component.literal("\"Toast\" Bunny"),config.spawnToastRabbitChance)
+        chances.addEntry(entry.startFloatField(Component.translatable(MobHeads.NAMESPACE+".config.spawn_chances.killer_rabbit"),config.spawnKillerRabbitChance)
             .setDefaultValue(0.01f).setMin(0.0f).setMax(1.0f)
-            .setTooltip(Component.literal("Chance that a \"Toast\" Rabbit spawn"))
-            .setSaveConsumer(v -> config.spawnToastRabbitChance = v)
+            .setSaveConsumer(value -> config.spawnKillerRabbitChance = value)
             .build());
 
+        //==============================================================================================================
         // SAVE CONFIG
+        //==============================================================================================================
         builder.setSavingRunnable(() -> {
             AutoConfig.getConfigHolder(MobHeadsConfigFile.class).save();
             MobHeadsConfigFile cfg = AutoConfig.getConfigHolder(MobHeadsConfigFile.class).getConfig();

@@ -2,8 +2,8 @@
   "parent": "mobheads:monsters/vanilla/piglin",
   "display": {
     "icon": {"id": "minecraft:wither_skeleton_skull"},
-    "title": "Wither Skeleton     ",
-    "description": "§7Drop Chance: §f2.5%\n§9+1% §6per Looting level§r",
+    "title": {"translate": "mobheads.advancement.monsters.vanilla.wither_skeleton.title"},
+    "description": {"translate": "mobheads.advancement.monsters.vanilla.wither_skeleton.description"},
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,

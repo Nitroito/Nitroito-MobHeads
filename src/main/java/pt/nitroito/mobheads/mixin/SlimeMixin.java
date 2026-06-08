@@ -20,6 +20,7 @@ import pt.nitroito.mobheads.MobHeadsData;
 import pt.nitroito.mobheads.utils.MobHeadsRandom;
 import pt.nitroito.mobheads.MobHeadsConfig;
 
+
 @Mixin(Slime.class)
 public abstract class SlimeMixin{
     @Unique private static String slimeColor = "none";
