@@ -1,0 +1,15 @@
+﻿{
+  "parent": "nitroito_mobheads:monsters/vanilla/wither_skeleton",
+  "display": {
+    "icon": {"id": "minecraft:dragon_head"},
+    "title": {"translate": "nitroito_mobheads.advancement.monsters.vanilla.ender_dragon.title"},
+    "description": {"translate": "nitroito_mobheads.advancement.monsters.vanilla.ender_dragon.description"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ender_dragon": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:dragon_head"}]}}
+  }
+}

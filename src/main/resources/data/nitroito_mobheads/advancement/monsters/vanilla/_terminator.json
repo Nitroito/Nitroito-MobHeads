@@ -1,0 +1,7 @@
+﻿{
+  "parent": "nitroito_mobheads:monsters/vanilla/ender_dragon",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

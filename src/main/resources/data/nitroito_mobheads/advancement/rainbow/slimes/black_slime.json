@@ -1,0 +1,15 @@
+﻿{
+  "parent": "nitroito_mobheads:rainbow/slimes/gray_slime",
+  "display": {
+    "icon": {"id": "minecraft:player_head", "components": {"minecraft:profile": {"properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzE5MzU1MmUwY2E1YzNhYzY0YWQ1MzQ0YzkzZDI2NTlmNjI1YTRhMjI0NGQ3ZTEyNDU0NGQ3MmZmNGQ0N2JlMiJ9fX0="}]}}},
+    "title": {"translate": "nitroito_mobheads.advancement.rainbow.slimes.black_slime.title"},
+    "description": {"translate": "nitroito_mobheads.advancement.rainbow.slimes.black_slime.description"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "black_slime": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "NitroitoMobHeads", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzE5MzU1MmUwY2E1YzNhYzY0YWQ1MzQ0YzkzZDI2NTlmNjI1YTRhMjI0NGQ3ZTEyNDU0NGQ3MmZmNGQ0N2JlMiJ9fX0="}]}}}]}}
+  }
+}

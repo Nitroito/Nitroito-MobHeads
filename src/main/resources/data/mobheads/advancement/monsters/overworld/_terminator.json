@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:monsters/overworld/silverfish",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}

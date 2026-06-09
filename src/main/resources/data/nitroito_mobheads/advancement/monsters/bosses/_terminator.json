@@ -1,0 +1,7 @@
+﻿{
+  "parent": "nitroito_mobheads:monsters/bosses/warden",
+  "hidden": true,
+  "criteria": {
+    "tick": {"trigger": "minecraft:tick"}
+  }
+}

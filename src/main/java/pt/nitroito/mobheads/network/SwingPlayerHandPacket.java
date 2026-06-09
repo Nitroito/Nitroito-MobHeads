@@ -11,7 +11,7 @@ public record SwingPlayerHandPacket(InteractionHand hand) implements CustomPacke
 
     @Override
     public Type<? extends CustomPacketPayload> type() {
-        return MobHeadsNetwork.SWING_PLAYER_HANDE_PACKET_ID;
+        return MobHeadsNetwork.SWING_PLAYER_HAND_PACKET_ID;
     }
 
     public static final StreamCodec<ByteBuf, SwingPlayerHandPacket> CODEC = new StreamCodec<>() {

@@ -9,11 +9,11 @@ import java.util.Objects;
 
 
 public class MobHeadsClient implements ClientModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger(MobHeads.NAMESPACE);
+	public static final Logger LOGGER = LoggerFactory.getLogger(MobHeads.MOD_ID);
 
 	@Override
 	public void onInitializeClient() {
-        ClientPlayNetworking.registerGlobalReceiver(MobHeadsNetwork.SWING_PLAYER_HANDE_PACKET_ID, (packet, context) -> {
+        ClientPlayNetworking.registerGlobalReceiver(MobHeadsNetwork.SWING_PLAYER_HAND_PACKET_ID, (packet, context) -> {
             LocalPlayer player = context.client().player;
             context.client().execute(() -> {
                 if (player!=null) Objects.requireNonNull(player).swing(packet.hand());

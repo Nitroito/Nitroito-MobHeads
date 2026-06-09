@@ -1,0 +1,15 @@
+﻿{
+  "parent": "nitroito_mobheads:villagers/swamp/swamp_mason",
+  "display": {
+    "icon": {"id": "minecraft:player_head", "components": {"minecraft:profile": {"properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjljZjE4YjA0NDdmZjFkZmNmYmE5ZTRjNGFjN2Y2ZTI2YTk4NjM1MmRkMTg3OGM2YTFlMDBkMGY1ZGQ2MjExZCJ9fX0="}]}}},
+    "title": {"translate": "nitroito_mobheads.advancement.villagers.swamp.swamp_shepherd.title"},
+    "description": {"translate": "nitroito_mobheads.advancement.villagers.swamp.swamp_shepherd.description"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "swamp_shepherd": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "NitroitoMobHeads", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjljZjE4YjA0NDdmZjFkZmNmYmE5ZTRjNGFjN2Y2ZTI2YTk4NjM1MmRkMTg3OGM2YTFlMDBkMGY1ZGQ2MjExZCJ9fX0="}]}}}]}}
+  }
+}

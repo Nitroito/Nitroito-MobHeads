@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:passive/axlolotls/blue_axolotl",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}

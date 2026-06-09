@@ -11,10 +11,10 @@ import pt.nitroito.mobheads.network.SwingPlayerHandPacket;
 
 
 public class MobHeadsNetwork {
-    public static final CustomPacketPayload.Type<SwingPlayerHandPacket> SWING_PLAYER_HANDE_PACKET_ID = new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath(MobHeads.NAMESPACE, "player_swing_hand"));
+    public static final CustomPacketPayload.Type<SwingPlayerHandPacket> SWING_PLAYER_HAND_PACKET_ID = new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath(MobHeads.MOD_ID, "player_swing_hand"));
 
     public static void register(){
-        PayloadTypeRegistry.clientboundPlay().register(SWING_PLAYER_HANDE_PACKET_ID, SwingPlayerHandPacket.CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(SWING_PLAYER_HAND_PACKET_ID, SwingPlayerHandPacket.CODEC);
     }
 
     public static void sendSwingPlayerHandPacket(Player player, InteractionHand hand){

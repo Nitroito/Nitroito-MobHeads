@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:passive/goats/hornless_screaming_goat",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}

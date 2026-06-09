@@ -1,0 +1,15 @@
+﻿{
+  "parent": "nitroito_mobheads:passive/cows/red_mooshroom",
+  "display": {
+    "icon": {"id": "minecraft:player_head", "components": {"minecraft:profile": {"properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZkNWZjNzAzMWFjYzk1YmVlYjUyODc1ZjE1NDA4ZTk3OWEwYTljMzkxYjZkYjdlY2VlN2U0MDAwNzJkZTVjNCJ9fX0="}]}}},
+    "title": {"translate": "nitroito_mobheads.advancement.passive.cows.brown_mooshroom.title"},
+    "description": {"translate": "nitroito_mobheads.advancement.passive.cows.brown_mooshroom.description"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "brown_mooshroom": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:player_head", "components": {"minecraft:profile": {"name": "NitroitoMobHeads", "id": [0,0,0,0], "properties": [{"name": "textures", "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZkNWZjNzAzMWFjYzk1YmVlYjUyODc1ZjE1NDA4ZTk3OWEwYTljMzkxYjZkYjdlY2VlN2U0MDAwNzJkZTVjNCJ9fX0="}]}}}]}}
+  }
+}

@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:tamable/llamas/gray_llama",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}

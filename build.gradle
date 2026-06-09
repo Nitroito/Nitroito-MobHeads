@@ -8,12 +8,17 @@ base{
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/mobheads.accesswidener")
+    accessWidenerPath = file("src/main/resources/nitroito_mobheads.classtweaker")
     splitEnvironmentSourceSets()
     mods {
         "nitroito_mobheads" {
             sourceSet sourceSets.main
             sourceSet sourceSets.client
+        }
+    }
+    runs {
+        client {
+            runDir = "run/fabric-${project.minecraft_version}"
         }
     }
 }
@@ -33,7 +38,7 @@ repositories {
 dependencies {
 	// To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    implementation "net.fabricmc:fabric-loader:${project.fabric_loader}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api}"
     implementation "com.terraformersmc:modmenu:${project.mod_menu}"
     implementation "me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config}"
@@ -45,7 +50,7 @@ processResources {
                 "name": project.mod_name,
                 "author": project.mod_author,
                 "minecraft_version": project.minecraft_version,
-                "fabric_loader": project.fabric_loader
+                "loader_version": project.loader_version
     }
 }
 
