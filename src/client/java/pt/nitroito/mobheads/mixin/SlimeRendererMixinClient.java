@@ -26,7 +26,7 @@ public abstract class SlimeRendererMixinClient {
             SLIME_LOCATION = Identifier.withDefaultNamespace("textures/entity/slime/slime.png");
             cir.setReturnValue(SLIME_LOCATION);
         }else {
-            SLIME_LOCATION = Identifier.fromNamespaceAndPath(MobHeads.NAMESPACE, "textures/entity/slime/"+slimeColor+"_slime.png");
+            SLIME_LOCATION = Identifier.fromNamespaceAndPath(MobHeads.MOD_ID, "textures/entity/slime/"+slimeColor+"_slime.png");
             cir.setReturnValue(SLIME_LOCATION);
         }
     }

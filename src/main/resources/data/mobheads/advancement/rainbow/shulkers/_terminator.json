@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:rainbow/shulkers/purple_shulker",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}

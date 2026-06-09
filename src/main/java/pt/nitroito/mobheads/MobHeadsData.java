@@ -16,6 +16,6 @@ public class MobHeadsData {
 
     public static void register(){
         DATA_ACCESSOR_SLIME_COLOR = SynchedEntityData.defineId(Slime.class, EntityDataSerializers.STRING);
-        Registry.register(BuiltInRegistries.DATA_COMPONENT_TYPE, Identifier.fromNamespaceAndPath("mobheads", "head_id"), DATA_COMPONENT_HEAD_ID);
+        Registry.register(BuiltInRegistries.DATA_COMPONENT_TYPE, Identifier.fromNamespaceAndPath(MobHeads.MOD_ID, "head_id"), DATA_COMPONENT_HEAD_ID);
     }
 }

@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:passive/rabbits/killer_rabbit",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}

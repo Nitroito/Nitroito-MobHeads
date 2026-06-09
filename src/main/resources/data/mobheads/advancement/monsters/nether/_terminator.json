@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:monsters/nether/zoglin",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}

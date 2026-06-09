@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:monsters/illagers/illusioner",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}

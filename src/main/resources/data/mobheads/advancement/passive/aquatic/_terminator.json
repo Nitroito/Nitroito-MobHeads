@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:passive/aquatic/nautilus",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}

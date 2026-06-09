@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:passive/overworld/allay",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}

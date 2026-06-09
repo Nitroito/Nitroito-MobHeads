@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Objects;
 
 public class MobHeadsClient implements ClientModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger(MobHeads.NAMESPACE);
+	public static final Logger LOGGER = LoggerFactory.getLogger(MobHeads.MOD_ID);
 
 	@Override
 	public void onInitializeClient() {

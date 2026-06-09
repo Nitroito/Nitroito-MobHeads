@@ -31,8 +31,8 @@ public class EntityHead{
     private final ItemStack mobHead;
 
     public EntityHead (String id, String entityName, float dropChance, String noteblockSound, String texture) {
-        this.key = Identifier.fromNamespaceAndPath(MobHeads.NAMESPACE, id);
-        this.entityName = MobHeads.NAMESPACE+".advancement."+entityName+".title";
+        this.key = Identifier.fromNamespaceAndPath(MobHeads.MOD_ID, id);
+        this.entityName = MobHeads.MOD_ID +".advancement."+entityName+".title";
         this.dropChance = dropChance;
         this.noteblockSound = noteblockSound;
         this.texture = texture;
@@ -58,7 +58,7 @@ public class EntityHead{
         ItemStack result = new ItemStack(BuiltInRegistries.ITEM.getValue(identifier), 1);
         var customName = Component.translatable(this.getEntityName());
         result.set(DataComponents.RARITY, Rarity.UNCOMMON);
-        result.set(DataComponents.CUSTOM_NAME, Component.translatable(MobHeads.NAMESPACE+".head.display_name",customName).setStyle(HEAD_STYLE));
+        result.set(DataComponents.CUSTOM_NAME, Component.translatable(MobHeads.MOD_ID +".head.display_name",customName).setStyle(HEAD_STYLE));
         result.set(DataComponents.NOTE_BLOCK_SOUND, Identifier.parse(this.getNoteblockSound()));
         result.set(MobHeadsData.DATA_COMPONENT_HEAD_ID, Identifier.parse(this.getKey().toString()));
         if (result.is(Items.PLAYER_HEAD)){

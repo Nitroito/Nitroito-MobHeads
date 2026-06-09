@@ -1,0 +1,16 @@
+﻿{
+  "parent": "nitroito_mobheads:monsters/vanilla/skeleton",
+  "display": {
+    "icon": {"id": "minecraft:creeper_head"},
+    "title": {"translate": "nitroito_mobheads.advancement.monsters.vanilla.creeper.title"},
+    "description": {"translate": "nitroito_mobheads.advancement.monsters.vanilla.creeper.description"},
+    "description1": "§7Drop Chance: §f1%\n§9+5% §6per Looting level§r",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "creeper": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": "minecraft:creeper_head"}]}}
+  }
+}

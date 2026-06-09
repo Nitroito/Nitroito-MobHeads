@@ -5,7 +5,7 @@
   "name": "${name}",
   "description": "Adds mob heads to the game with advancements to track the progression",
   "authors": ["${author}"],
-  "icon": "assets/mobheads/icon.png",
+  "icon": "assets/nitroito_mobheads/icon.png",
   "contact": {
       "homepage": "https://modrinth.com/mod/nitroito-mobheads",
       "sources": "https://github.com/Nitroito/Nitroito-MobHeads",
@@ -28,17 +28,17 @@
     "pt.nitroito.mobheads.MobHeadsMainDataGenerator",
     "pt.nitroito.mobheads.MobHeadsClientDataGenerator"
   ],
-  "accessWidener": "mobheads.accesswidener",
+  "accessWidener": "nitroito_mobheads.accesswidener",
   "mixins": [
-    "mobheads.mixins.json",
+    "nitroito_mobheads.mixins.json",
     {
-      "config": "mobheads.client.mixins.json",
+      "config": "nitroito_mobheads.client.mixins.json",
       "environment": "client"
     }
   ],
   "depends": {
     "minecraft": ">=${minecraft_version}",
-    "fabricloader": ">=${fabric_loader}",
+    "fabricloader": ">=${loader_version}",
     "java": ">=21",
     "fabric-api": "*"
   }

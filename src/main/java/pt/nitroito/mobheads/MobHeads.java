@@ -24,8 +24,8 @@ import java.util.Optional;
 
 public class MobHeads implements ModInitializer {
     public static final boolean DEVELOPMENT_MODE = FabricLoader.getInstance().isDevelopmentEnvironment();
-    public static final Logger LOGGER = LoggerFactory.getLogger("Nitroito-MobHeads");
-	public static final String NAMESPACE = "mobheads";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MobHeads.MOD_ID);
+	public static final String MOD_ID = "nitroito_mobheads";
     public static final String EASTER_EGG_JEB_SHEEP = "jeb_";
     public static final String EASTER_EGG_TOAST_RABBIT = "Toast";
     public static final String EASTER_EGG_KILLER_RABBIT = "Caerbannog";
@@ -41,12 +41,10 @@ public class MobHeads implements ModInitializer {
 
 
         ServerLivingEntityEvents.AFTER_DEATH.register((LivingEntity entity, DamageSource damageSource) -> {
-            if (entity.level().isClientSide() || entity.isBaby() || !(damageSource.getDirectEntity() instanceof Player player))
-                return;
+            if (entity.level().isClientSide() || entity.isBaby() || !(damageSource.getDirectEntity() instanceof Player player)) return;
 
             Optional<EntityHead> entityHead = EntityHeadResolver.getHead(entity);
-            if (entityHead.isEmpty() || entityHead.get().getDropChance() == 0)
-                return;
+            if (entityHead.isEmpty() || entityHead.get().getDropChance() == 0) return;
 
             Registry<Enchantment> enchantments = player.level().registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
             Holder<Enchantment> enchantment = enchantments.getOrThrow(Enchantments.LOOTING);

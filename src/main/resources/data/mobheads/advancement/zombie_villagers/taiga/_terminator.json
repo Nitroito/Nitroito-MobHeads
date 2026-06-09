@@ -1,7 +1,0 @@
-﻿{
-  "parent": "mobheads:zombie_villagers/taiga/taiga_zombie_weaponsmith",
-  "hidden": true,
-  "criteria": {
-    "tick": {"trigger": "minecraft:tick"}
-  }
-}
