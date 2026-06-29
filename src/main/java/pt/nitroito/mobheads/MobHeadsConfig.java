@@ -10,7 +10,7 @@ import pt.nitroito.mobheads.utils.MobHeadsRandom;
 public class MobHeadsConfig {
     public static MobHeadsConfigFile CONFIG_FILE;
 
-    public static boolean spawnColoredSheeps;
+    public static boolean spawnColoredSheep;
     public static float spawnColoredSheepChance;
     public static boolean spawnColoredSlimes;
     public static float spawnColoredSlimeChance;
@@ -23,15 +23,15 @@ public class MobHeadsConfig {
     public static boolean spawnToastRabbit;
     public static float spawnToastRabbitChance;
 
-    public static boolean canSpawnColoredSheep(){return (MobHeadsConfig.spawnColoredSheeps && MobHeadsRandom.nextFloat()<=MobHeadsConfig.spawnColoredSheepChance);}
-    public static boolean canSpawnColoredSlime(){return (MobHeadsConfig.spawnColoredSlimes && MobHeadsRandom.nextFloat()<=MobHeadsConfig.spawnColoredSlimeChance);}
-    public static boolean canSpawnColoredShulker(){return (MobHeadsConfig.spawnColoredShulkers && MobHeadsRandom.nextFloat()<=MobHeadsConfig.spawnColoredShulkerChance);}
-    public static boolean canSpawnJebSheep(){return (MobHeadsConfig.spawnJebSheep && MobHeadsRandom.nextFloat()<=MobHeadsConfig.spawnJebSheepChance);}
-    public static boolean canSpawnKillerRabbit(){return (MobHeadsConfig.spawnKillerRabbit && MobHeadsRandom.nextFloat()<=MobHeadsConfig.spawnKillerRabbitChance);}
-    public static boolean canSpawnToastRabbit(){return (MobHeadsConfig.spawnToastRabbit && MobHeadsRandom.nextFloat()<=MobHeadsConfig.spawnToastRabbitChance);}
+    public static boolean canSpawnColoredSheep(){return (spawnColoredSheep && MobHeadsRandom.nextFloat()<=spawnColoredSheepChance);}
+    public static boolean canSpawnColoredSlime(){return (spawnColoredSlimes && MobHeadsRandom.nextFloat()<=spawnColoredSlimeChance);}
+    public static boolean canSpawnColoredShulker(){return (spawnColoredShulkers && MobHeadsRandom.nextFloat()<=spawnColoredShulkerChance);}
+    public static boolean canSpawnJebSheep(){return (spawnJebSheep && MobHeadsRandom.nextFloat()<=spawnJebSheepChance);}
+    public static boolean canSpawnKillerRabbit(){return (spawnKillerRabbit && MobHeadsRandom.nextFloat()<=spawnKillerRabbitChance);}
+    public static boolean canSpawnToastRabbit(){return (spawnToastRabbit && MobHeadsRandom.nextFloat()<=spawnToastRabbitChance);}
 
     public static void loadConfigFile(MobHeadsConfigFile config) {
-        spawnColoredSheeps = config.spawnColoredSheep;
+        spawnColoredSheep = config.spawnColoredSheep;
         spawnColoredSheepChance = config.spawnColoredSheepChance;
         spawnColoredSlimes = config.spawnColoredSlimes;
         spawnColoredSlimeChance = config.spawnColoredSlimesChance;
@@ -52,4 +52,3 @@ public class MobHeadsConfig {
         MobHeadsConfigEvents.fire();
     }
 }
-

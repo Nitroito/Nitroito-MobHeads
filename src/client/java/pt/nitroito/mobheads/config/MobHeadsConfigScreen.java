@@ -13,7 +13,7 @@ import pt.nitroito.mobheads.MobHeadsConfig;
 public class MobHeadsConfigScreen {
 
     public static Screen create(Screen parent) {
-        MobHeadsConfigFile config =AutoConfig.getConfigHolder(MobHeadsConfigFile.class).getConfig();
+        MobHeadsConfigFile config = AutoConfig.getConfigHolder(MobHeadsConfigFile.class).getConfig();
         ConfigBuilder builder = ConfigBuilder.create().setParentScreen(parent).setTitle(Component.translatable(MobHeads.MOD_ID +".config.title"));
         ConfigEntryBuilder entry = builder.entryBuilder();
 

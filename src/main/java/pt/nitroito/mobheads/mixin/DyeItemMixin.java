@@ -29,7 +29,7 @@ public abstract class DyeItemMixin {
 	public void interactLivingEntity(ItemStack itemStack, Player player, LivingEntity livingEntity, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResult> cir) {
         DyeColor dyeColor = itemStack.get(DataComponents.DYE);
         if (livingEntity.isAlive() && !player.level().isClientSide() && dyeColor!=null) {
-            if ((livingEntity instanceof Sheep) && MobHeadsConfig.spawnColoredSheeps) {
+            if ((livingEntity instanceof Sheep) && MobHeadsConfig.spawnColoredSheep) {
                 cir.setReturnValue(InteractionResult.FAIL);
                 cir.cancel();
             }

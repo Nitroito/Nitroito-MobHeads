@@ -50,7 +50,7 @@ public class MobHeads implements ModInitializer {
             Registry<Enchantment> enchantments = player.level().registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
             Holder<Enchantment> enchantment = enchantments.getOrThrow(Enchantments.LOOTING);
             float extraChance = Math.max(EnchantmentHelper.getEnchantmentLevel(enchantment, player), 0) * 0.05F;
-            if (MobHeadsRandom.nextFloat() <= (entityHead.get().getDropChance() + extraChance + (DEVELOPMENT_MODE?1:0))) {
+            if (MobHeadsRandom.nextFloat() <= (entityHead.get().getDropChance() + (!DEVELOPMENT_MODE ? extraChance : 1))) {
                 entity.drop(entityHead.get().getHeadStack(1), false, false);
             }
         });
