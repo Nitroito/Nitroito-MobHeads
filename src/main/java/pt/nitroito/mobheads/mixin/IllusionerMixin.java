@@ -2,10 +2,7 @@ package pt.nitroito.mobheads.mixin;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.monster.illager.Evoker;
 import net.minecraft.world.entity.monster.illager.Illusioner;
 import org.spongepowered.asm.mixin.Mixin;
@@ -22,7 +19,7 @@ public class IllusionerMixin {
     @Inject(method="thunderHit", at=@At("HEAD"), cancellable=true)
 	public void thunderHit(ServerLevel serverLevel, LightningBolt lightningBolt, CallbackInfo ci) {
         if ((this.asEntity() instanceof Evoker evoker)){
-            Illusioner illusioner = EntityType.ILLUSIONER.create(evoker.level(), EntitySpawnReason.CONVERSION);
+            Illusioner illusioner = EntityTypes.ILLUSIONER.create(evoker.level(), EntitySpawnReason.CONVERSION);
             if (!(illusioner==null)){
                 illusioner.setXRot(evoker.getXRot());
                 illusioner.setYRot(evoker.getYRot());

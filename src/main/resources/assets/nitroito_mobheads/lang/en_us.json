@@ -944,5 +944,7 @@
   "nitroito_mobheads.advancement.zombie_villagers.taiga.taiga_zombie_villager.title": "Taiga Zombie Villager",
   "nitroito_mobheads.advancement.zombie_villagers.taiga.taiga_zombie_villager.description": "§7Drop Chance: §f10%\n§9+5% §6per Looting level§r",
   "nitroito_mobheads.advancement.zombie_villagers.taiga.taiga_zombie_weaponsmith.title": "Taiga Zombie Weaponsmith",
-  "nitroito_mobheads.advancement.zombie_villagers.taiga.taiga_zombie_weaponsmith.description": "§7Drop Chance: §f10%\n§9+5% §6per Looting level§r"
+  "nitroito_mobheads.advancement.zombie_villagers.taiga.taiga_zombie_weaponsmith.description": "§7Drop Chance: §f10%\n§9+5% §6per Looting level§r",
+  "nitroito_mobheads.advancement.passive.overworld.sulfur_cube.title": "Sulfur Cube",
+  "nitroito_mobheads.advancement.passive.overworld.sulfur_cube.description": "§7Drop Chance: §f1%\n§9+5% §6per Looting level§r"
 }

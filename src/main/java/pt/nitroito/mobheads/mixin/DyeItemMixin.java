@@ -7,7 +7,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.animal.sheep.Sheep;
 import net.minecraft.world.entity.monster.Shulker;
-import net.minecraft.world.entity.monster.Slime;
+import net.minecraft.world.entity.monster.cubemob.Slime;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.DyeItem;
@@ -29,7 +29,7 @@ public abstract class DyeItemMixin {
 	public void interactLivingEntity(ItemStack itemStack, Player player, LivingEntity livingEntity, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResult> cir) {
         DyeColor dyeColor = itemStack.get(DataComponents.DYE);
         if (livingEntity.isAlive() && !player.level().isClientSide() && dyeColor!=null) {
-            if ((livingEntity instanceof Sheep) && MobHeadsConfig.spawnColoredSheeps) {
+            if ((livingEntity instanceof Sheep) && MobHeadsConfig.spawnColoredSheep) {
                 cir.setReturnValue(InteractionResult.FAIL);
                 cir.cancel();
             }

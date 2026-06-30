@@ -3,7 +3,8 @@
   "package": "pt.nitroito.mobheads.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "SlimeRendererMixinClient"
+    "SlimeRendererMixinClient",
+    "AbstractCubeMobRendererMixinClient"
   ],
   "injectors": {
     "defaultRequire": 1

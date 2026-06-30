@@ -446,5 +446,6 @@ public class EntityHeadCollection {
         register("taiga_zombie_shepherd", "zombie_villagers.taiga.taiga_zombie_shepherd", 0.1F, "minecraft:entity.zombie_villager.ambient", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTJmOWI0NzVhMGU3NTAwNTYxNGExOTZkNTRiZTdkNjVhNzA2YzZjNjA1ZWI5M2EzODg2NGU1MTE2YzgxYWY5NCJ9fX0=");
         register("taiga_zombie_toolsmith", "zombie_villagers.taiga.taiga_zombie_toolsmith", 0.1F, "minecraft:entity.zombie_villager.ambient", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWIwYTFhYjZkMGU5ODgwNTlkMTk5Y2FjNjEyNjhlNmQ5YjBmMzQwOTE0YmM0MzY0ZjUzZDA3OGM2MTI5NTIxYyJ9fX0=");
         register("taiga_zombie_weaponsmith", "zombie_villagers.taiga.taiga_zombie_weaponsmith", 0.1F, "minecraft:entity.zombie_villager.ambient", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2YxMmQ2ZTczNzBiMTNkYWVjMjcwNTBlNzBjMjMyNjJkZWY3YzBiM2E2MDYwYjNkOTRlZTQ3ODQ0MmE1NjY5NCJ9fX0=");
+        register("sulfur_cube", "passive.overworld.sulfur_cube", 0.01F, "minecraft:entity.sulfur_cube.absorb", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2E5NTcwY2QxZGM0M2MxZTgzZjM2Y2M0OTk1NjY1NTEzZGMyNDA1ZGFkMjQxZDIxMTQyNDllOGRhOTc2ZmMzZCJ9fX0=");
     }
 }

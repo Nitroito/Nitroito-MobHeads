@@ -11,7 +11,7 @@
     "RabbitMixin",
     "SheepMixin",
     "ShulkerMixin",
-    "SlimeMixin"
+    "AbstractCubeMobMixin"
   ],
   "injectors": {
     "defaultRequire": 1

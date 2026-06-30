@@ -38,6 +38,7 @@ import net.minecraft.world.entity.animal.wolf.Wolf;
 import net.minecraft.world.entity.animal.wolf.WolfVariant;
 import net.minecraft.world.entity.animal.wolf.WolfVariants;
 import net.minecraft.world.entity.monster.*;
+import net.minecraft.world.entity.monster.cubemob.Slime;
 import net.minecraft.world.entity.monster.zombie.ZombieVillager;
 import net.minecraft.world.entity.npc.villager.Villager;
 import net.minecraft.world.entity.npc.villager.VillagerData;
