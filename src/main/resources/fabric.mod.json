@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "nitroito_mobheads",
   "version": "${version}",
-  "name": "${name}",
+  "name": "${author} ${name}",
   "description": "Adds mob heads to the game with advancements to track the progression",
   "authors": ["${author}"],
   "icon": "assets/nitroito_mobheads/icon.png",
